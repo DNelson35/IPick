@@ -59,6 +59,8 @@ const SpinningWheel: React.FC<SpinningWheelProps> = ({stopSpin}) => {
     rotation += .2
  }
 
+//  this should be fine
+
  
 
 
