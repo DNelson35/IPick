@@ -8,6 +8,7 @@ const Home: React.FC = () => {
 //  const handleSpin = () => {
 //    setStopSpin(prevStopSpin => !prevStopSpin);
 //  };
+//test test test
 
  return (
    <main className="flex justify-center items-center h-screen w-full">
