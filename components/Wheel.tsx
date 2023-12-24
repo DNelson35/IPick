@@ -17,7 +17,7 @@ const Wheel = () => {
 
  const spinWheel = () => {
   setIsSpinning(true) 
-  controls.start({ rotate: 360 * Math.random() * 10 , transition: { duration: 5 } }).then(() => setIsSpinning(false)) 
+  controls.start({ rotate: 360 * Math.abs(Math.random()) * 10, transition: { duration: 5 } }).then(() => setIsSpinning(false)) 
  } 
 
  const stopWheel = () => {
@@ -29,11 +29,11 @@ const Wheel = () => {
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
     <motion.div
       animate={controls}
-      style={{ borderRadius: '50%', width: '200px', height: '200px', backgroundColor: 'red', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}
+      style={{ borderRadius: '50%', width: '300px', height: '300px', backgroundColor: 'red', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}
       onAnimationComplete={stopWheel}
     >
       {names.map((name, index) => (
-        <div key={index} style={{ transform: `rotate(${anglePerName * index}deg) translateX(-69px) rotate(180deg) `, position: 'absolute', top: '43%' }}>
+        <div key={index} style={{ transform: `rotate(${anglePerName * index}deg) translateX(-120px) rotate(180deg)`, position: 'absolute', top: '45%', border: `1px solid rgba(0, 0, 0, 0.5)`}}>
           {name}
         </div>
       ))}
