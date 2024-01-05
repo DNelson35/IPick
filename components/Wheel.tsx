@@ -6,7 +6,7 @@ import { useInterval } from 'react-use'
 const Wheel = () => {
  const [isSpinning, setIsSpinning] = useState(false) 
  const [angle, setAngle] = useState(0) 
- const [names] = useState(['Name1', 'Name2', 'Name3', 'Name4', 'Name5', 'Name6', 'Name7', 'Name8', 'Name9', 'Name10', 'Name11', 'Name12']) 
+ const [names] = useState(['Chic-fil-a', 'Mc Donalds', 'Burger King', 'Wendys', 'Taco bell', 'Hardees', 'whataburger', 'dominos', 'hugry howies', 'pizza hut', 'popeyes', 'other']) 
  const controls = useAnimation() 
 
  useInterval(() => {
@@ -33,7 +33,7 @@ const Wheel = () => {
       onAnimationComplete={stopWheel}
     >
       {names.map((name, index) => (
-        <div key={index} style={{ transform: `rotate(${anglePerName * index}deg) translateX(-120px) rotate(180deg)`, position: 'absolute', top: '45%', border: `1px solid rgba(0, 0, 0, 0.5)`}}>
+        <div key={index} style={{ transform: `rotate(${anglePerName * index}deg) translateX(-100px) rotate(180deg)`, position: 'absolute', top: '45%', border: `1px solid rgba(0, 0, 0, 0.5)`}}>
           {name}
         </div>
       ))}
