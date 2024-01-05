@@ -38,7 +38,7 @@ const Wheel = () => {
         </div>
       ))}
     </motion.div>
-    <button onClick={spinWheel}>Spin</button>
+    <button style={{ marginLeft: '20px', backgroundColor: 'red', padding: '5px'}} onClick={spinWheel}>Spin</button>
   </div>
  ) 
 } 
