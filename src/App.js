@@ -18,7 +18,7 @@ function App() {
           contrastColor="white"
           buttonText="Spin"
           isOnlyOnce={false}
-          size={190}
+          size={250}
           upDuration={50}
           downDuration={600}
           fontFamily="Arial"
