@@ -1,8 +1,6 @@
-html {
-  background-color: black;
-}
+
 .App {
   font-family: sans-serif;
   text-align: center;
-  transform: translateX(150px)
+  transform: translateX(150px) translateY(100px);
 }
